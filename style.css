@@ -1,0 +1,32 @@
+.priceOld {
+    color: #999;
+    text-decoration: line-through;
+    display: inline-block; 
+    margin-right: 10px; 
+    margin-bottom: 5px;
+    font-size: 80%;
+}
+
+.discount {
+    color: green;
+    display: inline-block;
+}
+
+.priceNew {
+    color: black;
+    font-size: 170%; 
+}
+
+.card {
+    background-color: ECE5E2;
+    width: 200px;
+    border: 1px solid #999;
+    margin: 12px;
+    padding: 8px;
+}
+
+.product-name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 150%;
+}

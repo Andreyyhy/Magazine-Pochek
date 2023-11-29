@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>Magazine pochek</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="card">
+
+        </div>
+        
+        <script>
+            const div = document.querySelectorAll("div.card")[0];
+            console.log(div);
+
+            const divImg = document.createElement("div");
+            divImg.innerHTML = "<img src='pochka.jpg' alt='Почка'>";
+            div.appendChild(divImg);
+
+            
+            let stars = document.createElement("div");
+            div.appendChild(stars);
+            for (let i = 0; i < 5; i++) {
+                const star = document.createElement("span");
+                star.innerHTML = "&#9733;";
+                stars.appendChild(star);
+            }
+
+
+            let header = document.createElement("div");
+            div.appendChild(header);
+            header.classList.add("product-name");
+            header.textContent = "Pochka Novaya";
+
+            let priceOld = document.createElement("div");
+            priceOld.textContent = "800 000 грн";
+            priceOld.classList.add("priceOld");
+            div.appendChild(priceOld);
+
+            let discount = document.createElement("div");
+            discount.textContent = "-400 000%";
+            discount.classList.add("discount");
+            div.appendChild(discount);
+
+            let priceNew = document.createElement("div");
+            priceNew.textContent = "200 грн";
+            priceNew.classList.add("priceNew");
+            div.appendChild(priceNew);
+
+            
+        </script>
+    </body>
+</html>
